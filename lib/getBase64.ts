@@ -15,7 +15,7 @@ const getBase64 = async(imageUrl:string) => {
         const buffer  = await res.arrayBuffer()
 
         const {base64} = await getPlaiceholder(Buffer.from(buffer))
-        console.log(base64)
+        // console.log(base64)
 
         return (base64)
     }catch(e){
