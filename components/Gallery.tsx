@@ -18,7 +18,7 @@ const Gallery = async({topic}:Props) => {
 
     const photosWithBlur = await addBlurredDataUrls(images)
     return(
-        <section className='px-2 my-3 grid gap-2 grid-cols-gallery'>
+        <section className='px-2 my-3 grid gap-2 grid-cols-gallery auto-rows-[10px]'>
 
             <section className="px-2 my-3 grid gap-2 grid-cols-gallery">
 
