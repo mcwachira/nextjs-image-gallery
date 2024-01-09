@@ -8,7 +8,7 @@ const BasicImageSchema = z.object({
     total_results:z.number()
 })
 
-const PhotoSchema =  z.object({
+const photoSchema =  z.object({
     id:z.number(),
     width:z.number(),
     height:z.number(),
@@ -27,4 +27,4 @@ export const ImageSchemaWithPhotos = BasicImageSchema.extend({
 
 //creating types
 export const photo = z.infer<typeof PhotoSchema>
-export const ImagesData = z.infer<typeof  ImageSchemaWithPhotos>
+export const ImageResults = z.infer<typeof  ImageSchemaWithPhotos>

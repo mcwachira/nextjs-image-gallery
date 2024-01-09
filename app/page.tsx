@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
   return (
    <div>
-     Hello world
+<Gallery/>
    </div>
   )
 }
