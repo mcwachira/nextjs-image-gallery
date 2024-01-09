@@ -26,5 +26,5 @@ export const ImageSchemaWithPhotos = BasicImageSchema.extend({
 
 
 //creating types
-export const photo = z.infer<typeof PhotoSchema>
+export const Photo = z.infer<typeof PhotoSchema>
 export const ImageResults = z.infer<typeof  ImageSchemaWithPhotos>
